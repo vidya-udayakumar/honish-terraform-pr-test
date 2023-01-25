@@ -19,7 +19,7 @@ jobs:
 
     - name: Request approval
       if: success()
-      uses: vidya-udayakumar/honish-terraform-pr-test@v2
+      uses: github/code-review-action@v1
       with:
         reviewers: '@user1, @user2'
         message: 'Please review and approve this pull request'
