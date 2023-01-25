@@ -17,17 +17,17 @@ jobs:
         echo "Building and testing code"
         # Add commands to build and test code here
 
-    - name: Request approval
-      if: success()
-      uses: github/code-review-action@v1
-      with:
-        reviewers: '@user1, @user2'
-        message: 'Please review and approve this pull request'
+#     - name: Request approval
+#       if: success()
+#       uses: github/code-review-action@v1
+#       with:
+#         reviewers: '@user1, @user2'
+#         message: 'Please review and approve this pull request'
 
-    - name: Deploy to production
-      if: success()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        echo "Deploying to production"
+#     - name: Deploy to production
+#       if: success()
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       run: |
+#         echo "Deploying to production"
         # Add commands to deploy to production here
